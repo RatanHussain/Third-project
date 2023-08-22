@@ -5,7 +5,7 @@
     font-family:sans-serif;
 }
 .header{
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     top: 0;
     width: 100%;
@@ -354,6 +354,89 @@
                 z-index: 1;
             }
 
+        }
+    }
+}
+.footer{
+    width: 100%;
+    height: 380px;
+    background-color: #04091E;
+    position: relative;
+    color: #fff;
+    bottom: 0;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    .content{
+        width: 87%;
+        display: flex;
+        margin-top: -15px;
+        justify-content: center;
+        & h3{
+            font-size: 1.1rem;
+            margin: 20px 0;
+        }
+        & p{
+            opacity: .5;
+            display: inline;
+        }
+        .about{
+            width: 420px;
+            margin: 0 10px;
+            & a{
+                text-decoration: none;
+                color: #3a57e7;
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            
+        }
+        .news{
+            width: 430px;
+            margin: 0 10px;
+            .inp{
+                width: 4300px;
+                height: auto;
+                display: flex;
+                .mil{
+                    width: 360px;
+                    height: 38px;
+                    border: none;
+                    outline: none;
+                    padding-left:15px ;
+                }
+                .btn{
+                    width: 70px;
+                    font-size: 1.5rem;
+                    border: none;
+                    outline: none;
+                    background-color: #8490FF;
+                    cursor: pointer;
+                }
+            }
+        }
+        .followme{
+            width: 150px;
+            margin: 0 10px;
+            .icons{
+                margin: 30px 0;
+                & ul li{
+                    display: inline;
+                    margin: 0 8px;
+                    & i{
+                        padding: 0 1px;
+                        transition: all .5s;
+                        &:hover{
+                            transform: scale(1.5);
+                            cursor: pointer;
+                        }
+                    }
+                    
+                }
+            }
         }
     }
 }
