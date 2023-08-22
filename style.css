@@ -322,11 +322,11 @@
             text-align: center;
             align-items: center;
             transition: all .4s;
-            background-color: #eeeaead1;
+            background-color: #f7f6f6d1;
             .circle{
                 height: 130px;
                 width: 130px;
-                border: 25px solid #b5aeae86;
+                border: 25px solid #e2dfdf86;
                 border-radius: 50%;
                 align-items: center;
                 display: flex;
@@ -339,6 +339,7 @@
             & hr{
                 margin: 15px auto;
                 font-weight: bolder;
+                opacity: .7;
             }
             & h2{
                 margin-bottom: 20px;
@@ -348,7 +349,7 @@
                 opacity: .7;
             }
             &:hover{
-                background: linear-gradient(40deg,#8292FF,#63BCFC);
+                background: linear-gradient(80deg,#8292FF,#63BCFC);
                 transform:scale(1.06);
                 z-index: 1;
             }
