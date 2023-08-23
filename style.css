@@ -475,7 +475,19 @@
                     border: none;
                     outline: none;
                     background-color: #8490FF;
+                    transition: all .3s;
                     cursor: pointer;
+                    & i{
+                        
+                        transition: all .3s;
+                    }
+                    &:hover{
+                        background-color: #3a57e7;
+                        transition: all .3s;
+                        & i{
+                            font-size: 2rem;
+                        }
+                    }
                 }
             }
         }
