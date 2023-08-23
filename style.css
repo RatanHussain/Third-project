@@ -21,23 +21,21 @@
             transform: scale(1.2);
         }
     }
-    @media (max-with:768px) {
-        .header .navi .fa-solid{
-            display: block;
-        }
+    @media (max-width:768px) {
         
     }
     .navi{
         margin-top: 20px;
         margin-right: 390;
         #check{
-            display: none;
+            /* display: none; */
         }
         & label{
-            display: none;
+            /* display: none; */
         }
         & ul{
             list-style: none;
+            display: none;
             display: flex;
             margin-right: 400px;
             .arrow a{
@@ -338,7 +336,7 @@
                 border-radius: 50% ;
                 margin: 30px auto;
                 border: 30px solid #e2dfdf86;
-                background: linear-gradient(80deg,#8292FF,#63BCFC);
+                background: linear-gradient(40deg,#7485f5,#56aff0);
                 transition: 1s;
                 &:hover{
                     transform: rotate(360deg);
@@ -394,7 +392,7 @@
                 transform:scale(1.06);
                 z-index: 1;
                 .firstcir{
-                    transform: rotate(360degs);
+                    transform: rotate(360deg);
                 }
                 & h1{
                     display: none;
@@ -409,6 +407,8 @@
                     transform: translateX(12%);
                     transition: all .4s;
                     &:hover{
+                        background-color:#63BCFC;
+                        border: 1px solid #fff;
                         margin-left: 22px;
                         transform: scale(1.1);
                         border-radius: 20px;
