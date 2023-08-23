@@ -348,10 +348,35 @@
             & p{
                 opacity: .7;
             }
+            & h1{
+                /* display: none; */
+            }
+            & button{
+                display: none;
+                justify-content: center;
+                width: 80%;
+                height: 35px;
+                outline: none;
+                cursor: pointer;
+                border: none;
+                font-weight: bold;
+            }
             &:hover{
                 background: linear-gradient(80deg,#8292FF,#63BCFC);
                 transform:scale(1.06);
                 z-index: 1;
+                & h1{
+                    display: none;
+                    
+                }
+                & button{
+                    display:block;
+                    /* width: 100px;
+                    height: 35px; */
+                    align-items: center;
+                    justify-content: center;
+                    transform: translateX(12%);
+                }
             }
 
         }
