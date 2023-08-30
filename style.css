@@ -21,18 +21,9 @@
             transform: scale(1.2);
         }
     }
-    @media (max-width:768px) {
-        
-    }
     .navi{
         margin-top: 20px;
         margin-right: 390;
-        #check{
-            /* display: none; */
-        }
-        & label{
-            /* display: none; */
-        }
         & ul{
             list-style: none;
             display: none;
@@ -511,4 +502,104 @@
             }
         }
     }
+}
+
+@media (max-width:768px) {
+    .header{
+        width: 100%;
+        height: fit-content;
+        position: fixed;
+    }
+    .me{
+        display: inline;
+        .textarea{
+            text-align: center;
+            transform: scale(.7);
+            justify-content: center;
+            width: 100%;
+            margin-top: 80px;
+            & h5{
+                font-size: 1.5rem;
+            }
+        }
+        .myimg{
+            transform: scale(.5);
+            margin-top: -360px;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+    & hr{
+        margin-top:-125px ;
+        margin-bottom: 50px ;
+    }
+    .aboutme{
+        text-align: center;
+        width: 100%;
+        display: inline;
+        .img{
+            transform: scale(.5);
+            justify-content: center;
+            margin-top: -100px;
+        }
+        .textarea{
+            transform: scale(.8);
+            margin: -160px auto 10px;
+            width: 100%;
+            justify-content: center
+            
+        }
+    }
+    .celint{
+        height: fit-content;
+        width: 100%;
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        .container{
+            color: #000;
+            margin: 20px auto;
+            transform: scale(.7);
+            height: fit-content;
+            &:hover{
+                transform: scale(.9);
+            }
+        }
+    }
+    .section{
+        transform: scale(.9);
+        margin-top: -100px;
+    }
+    .section3{
+        transform: scale(.7);
+        justify-content: center;
+        /* align-items: center; */
+        margin-top: -500px;
+        .items{
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+            display: inline;
+            
+        }
+    }
+    .footer{
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+        padding: 50px 0;
+        margin: 20px auto;
+        .content{
+            display: inline;
+            width: 100%;
+            justify-content: center;
+            margin: 50px auto;
+            .about{
+                padding: 0px 20px;
+            }
+        }
+    }
+
 }
