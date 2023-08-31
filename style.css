@@ -409,6 +409,58 @@
   }
 }
 
+/* --------------------Footer Starts--------------------- */
+.footer{
+  position: relative;
+  width: 100%;
+  height: 380px;
+  background-color: #04091E;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+  .content{
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    display: flex;
+    & div{
+      margin: 0 30px;
+      & h3{
+        font-size: 1.5rem;
+        margin: 20px 0;
+      }
+      & p{
+        opacity: 0.6;
+        font-size: .9rem;
+      }
+    }
+    .about{
+      width: 450px;
+
+    }
+    .news{
+      width: 450px;
+      .inp input{
+        width: 200px;
+        
+      }
+    }
+    .followme{
+      width: 200px;
+    }
+  }
+}
+
+
+/* --------------------Footer End--------------------- */
+
+
+
+/* --------------------Responsive sectin Starts------------------------ */
+
+
 @media (max-width: 768px) {
   .header {
     width: 100%;
