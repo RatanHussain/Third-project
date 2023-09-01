@@ -15,7 +15,7 @@
   background-color: #fff;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   .logo img {
-    margin: 20px 20px;
+    margin: 20px 50px;
     height: 25px;
     transition: all 0.5s;
     &:hover {
@@ -24,21 +24,23 @@
   }
   .navi {
     margin-top: 20px;
-    margin-right: 390;
     & ul {
       /* display: none; */
       list-style: none;
       display: flex;
-      margin-right: 400px;
+      margin-left: 590px;
       & li {
         margin: 5px 18px;
-        /* display: flex; */
         & a {
           text-decoration: none;
           color: #000;
           text-transform: uppercase;
           font-size: 0.7rem;
           font-weight: bold;
+          transition: all .3s;
+          &:hover{
+            color: #3a57e7;
+          }
         }
       }
     }
@@ -49,7 +51,7 @@
   display: none;
 }
 .header .navi label{
-  display: inline;
+  display: none;
   font-size: 1.5rem;
   margin-right: -300px;
   float: right;
@@ -514,11 +516,16 @@
     .navi input:checked ~ ul{
       left: 0;
     }
+    .navi{
+      margin-right: 390px;
+    }
     .navi ul{
+      margin-left: 0px;
       /* display: none; */
       position: fixed;
       top: 50px;
       left: -500px;
+      /* right: -500px; */
       /* left: 0; */
       width: 100%;
       height: 100vh;
@@ -538,8 +545,8 @@
     }
   }
   .header .navi label{
-    /* display: block; */
-    margin-right: -300px;
+    display: block;
+    margin-right: -200px;
 
   }
   .me {
