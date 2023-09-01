@@ -145,7 +145,7 @@
 }
 
 .servicearea {
-  width: 50%;
+  width: 70%;
   height: fit-content;
   padding: 30px 0px;
   text-align: center;
@@ -413,20 +413,22 @@
 .footer{
   position: relative;
   width: 100%;
-  height: 380px;
+  height: fit-content;
+  padding: 120px 0px;
   background-color: #04091E;
   justify-content: center;
   color: #fff;
   align-items: center;
   .content{
-    width: 80%;
+    width: 90%;
     height: 100%;
     align-items: center;
     justify-content: center;
     margin:auto;
     display: flex;
+    flex-wrap: wrap;
     & div{
-      margin: 0 30px;
+      opacity: 1;
       & h3{
         font-size: 1.5rem;
         margin: 20px 0;
@@ -437,18 +439,62 @@
       }
     }
     .about{
-      width: 450px;
-
+      width: 420px;
+      padding: 20px 0px;
     }
     .news{
+      margin-left:40px;
       width: 450px;
-      .inp input{
-        width: 200px;
-        
+      padding: 0;
+      .info{
+        transform: translateX(25px);
+      }
+      .info .mil{
+        width: 300px;
+        font-size: 1rem;
+        height: 35px;
+        justify-content: left;
+        outline: none;
+        left: 0;
+        text-align: left;
+        padding-left: 20px;
+        margin-left: -30px;
+        /* transform: translateX(-50px); */
+      }
+      .info .btn{
+        left: 0;
+        cursor: pointer;
+        margin-left:-20px ;
+        border: 1px solid #000;
+        outline: none;
+        height: 35px;
+        color: #fff;
+        font-size: 1rem;
+        background-color: #3a57e7;
+        width: 80px;
       }
     }
     .followme{
+      padding: 20px 0px;
       width: 200px;
+      .icons{
+        margin: 10px auto;
+        display: flex;
+        & ul{
+          display: flex;
+          list-style: none;
+          & li{
+            margin-right: 23px;
+            margin-top: 10px;
+            transform: scale(1.4);
+            transition: all .5s;
+            cursor: pointer;
+            &:hover{
+              transform: scale(2);
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -507,6 +553,12 @@
       justify-content: center;
     }
   }
+
+  .servicearea h1{
+    font-size: 1.7rem;
+    width: 100%;
+    
+  }
   .celint {
     height: fit-content;
     width: 100%;
@@ -538,6 +590,9 @@
       justify-content: center;
       display: inline;
     }
+  }
+  .footer .followme{
+    transform: translateX(-115px);
   }
 }
   
