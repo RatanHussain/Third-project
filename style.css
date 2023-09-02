@@ -415,11 +415,11 @@
   position: relative;
   width: 100%;
   height: fit-content;
-  padding: 120px 0px;
   background-color: #04091E;
   justify-content: center;
   color: #fff;
   align-items: center;
+  padding: 100px 0px;
   .content{
     width: 90%;
     height: 100%;
@@ -427,7 +427,7 @@
     justify-content: center;
     margin:auto;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     & div{
       opacity: 1;
       & h3{
@@ -524,7 +524,7 @@
       /* display: none; */
       position: fixed;
       top: 50px;
-      left: -500px;
+      left: -800px;
       /* right: -500px; */
       /* left: 0; */
       width: 100%;
@@ -627,8 +627,45 @@
       display: inline;
     }
   }
-  .footer .followme{
-    transform: translateX(-115px);
+  .footer{
+    margin-top: -300px;
+    padding: 0px;
+
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content{
+      width: 100%;
+      height: fit-content;
+      display: block;
+      justify-content: center;
+      text-align: center;
+      .about{
+        width: 90%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+      }
+      .news{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+      }
+      .followme{
+        width: 100%;
+        margin: 0 auto;
+        /* display: flex; */
+        .icons{
+          justify-content: center;
+        }
+      }
+    }
   }
 }
   
